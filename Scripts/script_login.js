@@ -17,7 +17,7 @@ button.addEventListener("click", function (event){
     
     if(email == "admin@gmail.com" && password == "admin"){
         alert("Bem vindo Admin")
-        location.href = "index.html";
+        location.href = "gestaoUser.html";
     }else{
         alert("Crie uma conta por favor")
     }

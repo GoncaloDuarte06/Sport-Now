@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport-Now</title>
+<title>Sport-Now</title>
     <link rel="shortcut icon" href="Images\favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="Css\style-Main.css">
+    <link rel="stylesheet" href="Css\search.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -29,8 +23,7 @@
       <i class="bx bx-x" id="close-cart"></i>
     </div>
     <div class="inputgroup"> 
-      <a href="search.html">
-      <button class="search-btn">
+        <button class="search-btn">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class="searchicon">
             <g>
@@ -45,8 +38,7 @@
             </g>
           </svg>
         </button>
-      </a>
-      <input type="text" class="search"  placeholder="" id="search"/>
+      <input type="text" class="search"  placeholder="Search" id="search"/>
     </div>
         <button class="cross-btn" id="search-btn">
           <svg height="12px" viewBox="0 0 329.26933 329" width="12px" xmlns="http://www.w3.org/2000/svg" class="cross"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
@@ -60,30 +52,7 @@
     </script>
     
   </div>
-  <!-- slide show com interação -->
-  <section>
-    <img src="Imagens\1.png" id="slider">
-    <ul class="navigation">
-      <li onclick="imgSlider('Imagens\\1.png')"><img src="Imagens\1.png" ></li>
-      <li onclick="imgSlider('Imagens\\2.png')"><img src="Imagens\2.png" ></li>
-      <li onclick="imgSlider('Imagens\\3.png')"><img src="Imagens\3.png" ></li>
-    </ul>
-  </section>
-  
-
-  <!-- messagem de motivação -->
-
-  <div class="message">
-    <div class="containerMessage">
-      <p class="part1">Let your flow ride you in</p>
-      <p class="part2">SPORT-NOW</p>
-      <p class="part3">We beleive that everything we do is for you</p>
-    </div>
-  </div>
-
-
-  <!-- itens de venda -->
-  <div class="ItemsDestaque">
+  <div class="ItemsDestaque">   
     <div class="shop-card" id ="item1">
       <h2 class="title">Nike Metcon 2</h2>
       <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
@@ -105,12 +74,41 @@
       <h2 class="price">$130</h2>
       <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
     </div>
+
+    <div class="shop-card" id ="item3">
+        <h2 class="title">Nike Metcon 2</h2>
+        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+        <h2 class="price">$130</h2>
+        <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
+      </div>
+      <div class="shop-card" id ="item3">
+        <h2 class="title">Nike Metcon 2</h2>
+        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+        <h2 class="price">$130</h2>
+        <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
+      </div>
+      <div class="shop-card" id ="item3">
+        <h2 class="title">Nike Metcon 2</h2>
+        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+        <h2 class="price">$130</h2>
+        <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
+      </div>
+      <div class="shop-card" id ="item3">
+        <h2 class="title">Nike Metcon 2</h2>
+        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+        <h2 class="price">$130</h2>
+        <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
+      </div>
+      <div class="shop-card" id ="item3">
+        <h2 class="title">Nike Metcon 2</h2>
+        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+        <h2 class="price">$130</h2>
+        <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
+      </div>
   </div>
-  
-    
+  <script  src="Scripts\script_main.js"></script>
 
-
-<!-- Footer  -->
+  <!-- Footer  -->
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -153,12 +151,6 @@
     </div>
   </footer>
 
-<script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
-<!-- Ligação para o script-->
-  <script  src="Scripts\script_main.js"></script>
-
+    
 </body>
 </html>
