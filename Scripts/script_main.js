@@ -19,7 +19,6 @@ if (document.readyState == "loading"){
 
 function ready(){
     var removeCartButtons = document.getElementsByClassName("cart-remove");
-    console.log(removeCartButtons);
     for (var i = 0; i < removeCartButtons.length; i++){
         var button = removeCartButtons[i];
         button.addEventListener("click",removeCartItem);
@@ -39,6 +38,9 @@ function ready(){
 
 function buyButtonClicked(event){
     alert("Your order has been placed");
+    var para = new URLSearchParams();
+    para.append("price", document.getElementsByClassName("total-price")[0].innerText);
+    location.href = "payment.html?" + para.toString();
     var cartContent = document.getElementsByClassName("cart-content")[0];
     while ( cartContent.hasChildNodes()){
         cartContent.removeChild(cartContent.firstChild);
@@ -69,7 +71,7 @@ function addCartClicked(event){
     var shopProducts = button.parentElement;
     var title = shopProducts.getElementsByClassName("title")[0].innerText;
     var price = shopProducts.getElementsByClassName("price")[0].innerText;
-    var productimg = shopProducts.getElementsByClassName("product-img")[0].scr;
+    var productimg = shopProducts.getElementsByClassName("product-img")[0].src;
     addProductTo(title,price,productimg);
     updatetotal();
 }
@@ -86,7 +88,7 @@ function addProductTo(title,price,productimg){
     }
 
 var cartBoxContent = `
-                    <img src="http://www.supah.it/dribbble/012/1.jpg" alt="" class="cart-img">
+                    <img src="${String(productimg)}" alt="" class="cart-img">
                     <div class="detail-box">
                         <div class="cart-product-title">${title}</div>
                         <div class="cart-price">${price}</div>
@@ -96,12 +98,8 @@ var cartBoxContent = `
 
 cartShopBox.innerHTML = cartBoxContent;
 cartItems.append(cartShopBox);
-cartShopBox
-    .getElementsByClassName("cart-remove")[0]
-    .addEventListener("click",removeCartItem);
-cartShopBox
-    .getElementsByClassName("cart-quantity")[0]
-    .addEventListener("change",quantityChanged);
+cartShopBox.getElementsByClassName("cart-remove")[0].addEventListener("click",removeCartItem);
+cartShopBox.getElementsByClassName("cart-quantity")[0].addEventListener("change",quantityChanged);
 }
 
 
@@ -123,3 +121,26 @@ function updatetotal(){
     
 }
 
+var images = document.getElementsByClassName("product-img");
+for ( let i = 0; i < images.length;i++){
+    images[i].addEventListener("click", function (event){
+        var div = images[i].parentElement;
+        var title = div.getElementsByClassName("title")[0].innerText;
+        var price = div.getElementsByClassName("price")[0].innerText;
+        var productimg = div.getElementsByClassName("product-img")[0].src;
+
+
+        document.getElementsByClassName("detail-img")[0].src = productimg;
+        document.getElementsByClassName("price-show")[0].innerHTML = price;
+        document.getElementsByClassName("details")[0].children[1].children[0].innerHTML = title;
+
+        document.getElementById("details").style.display = "block"
+
+        event.preventDefault()
+    })
+}
+
+
+function clearTextarea(){
+    document.getElementById("id_content").value = "";
+}

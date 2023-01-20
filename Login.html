@@ -14,16 +14,19 @@
         <img class="icon" src="Imagens\user.png" alt="user" >
         <a href="index.html"><img src="Imagens\icon.png" alt="Logo"  class="logotipo"></a>
     </header>
+    <div class="warning" id = "warning">
+      <p></p>
+  </div>
     <section class="user">
         <div class="user_options-container">
           <div class="user_options-text">
             <div class="user_options-unregistered">
               <h2 class="user_unregistered-title">Don't have an account?</h2>
               <p class="user_unregistered-text">Come join us in this mess of a WebSite</p>
-              <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+              <button class="user_unregistered-signup" id="signup-button"onclick ="changeLogIn()">Sign up</button>
             </div>
           <div class="user_options-forms" id="user_options-forms">
-            <div class="user_forms-login">
+            <div class="user_forms-login" id = "user-login">
               <h2 class="forms_title">Login</h2>
               <form class="forms_form">
                 <fieldset class="forms_fieldset">
@@ -40,7 +43,7 @@
                 </div>
               </form>
             </div>
-            <div class="user_forms-signup">
+            <div class="user_forms-signup" id ="user-signup">
               <h2 class="forms_title">Sign Up</h2>
               <form class="forms_form">
                 <fieldset class="forms_fieldset">
@@ -55,7 +58,7 @@
                   </div>
                 </fieldset>
                 <div class="forms_buttons">
-                  <input type="submit" value="Sign up" class="forms_buttons-action">
+                  <input type="submit" value="Sign up" class="forms_buttons-action" id ="ButtonSignup">
                 </div>
               </form>
             </div>

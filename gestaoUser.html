@@ -4,21 +4,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
     <title>Sport-Now</title>
     <link rel="stylesheet" href="css\gestao.css">
 </head>
 <body>
     <header class="header_bar">
-    <a href="Login.html" ><img class="icon" src=".\\Imagens\user.png" alt="user" ></a>
-    <a href="index.html"><img src="Imagens\icon.png" alt="Logo"  class="logotipo"></a>
+        <a href="Login.html" ><img class="icon" src=".\\Imagens\user.png" alt="user" ></a>
+        <a href="index.html"><img src="Imagens\icon.png" alt="Logo"  class="logotipo"></a>
     </header>
     <div class ="title">
-    <h2>Gestão de Admin</h2>
+        <h2>Gestão de Admin</h2>
     </div>
-    <div class ="info"">
-    <p id = "info">Nome: Admin</p>
-    <p id = "info">Email: admin@gmail.com</p>
-    <p id = "info"></p>
-    </div>   
+    <div class ="info">
+        <p id = "info">Nome: Admin</p>
+        <p id = "info">Email: admin@gmail.com</p>
+        <p id = "info"></p>
+    </div> 
+    
+    <div    class="main">
+        <div class="visitors_7">
+            <h2 class="gray">Visitors (last 7d)</h2>
+            <h2 class="number">12,456</h2>
+        </div>
+        <div class="sales">
+            <h2 class="gray">Sale</h2>
+            <h2 class="number">$140,267</h2>
+        </div>
+        <div class="orders">
+            <h2 class="gray">Completed orders</h2>
+            <h2 class="number">90%</h2>
+        </div>
+        <div class="visitors_life">
+            <h2 class="gray">Visitors (life)</h2>
+            <h2 class="number">3202332</h2>
+        </div>
+    </div>
+    <div    class="second_main">
+        <div class="visitors_perc">
+            <div class="chart-container-wrapper">
+                <div class="chart-container">
+                  <div class="chart-info-wrapper">
+                    <h2>Visitors</h2>
+                    <span>12 K</span>
+                  </div>
+                  <div class="chart-svg">
+                    <svg viewBox="0 0 36 36" class="circular-chart pink">
+                      <path class="circle-bg" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                      <path class="circle" stroke-dasharray="30, 100" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                      <text x="18" y="20.35" class="percentage">30%</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="sales_perc">
+            <div class="chart-container-wrapper">
+                <div class="chart-container">
+                  <div class="chart-info-wrapper">
+                    <h2>Sales</h2>
+                    <span>$144K</span>
+                  </div>
+                  <div class="chart-svg">
+                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+                      <path class="circle-bg" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                      <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                      <text x="18" y="20.35" class="percentage">60%</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="orders_perc">
+            <div class="chart-container-wrapper">
+                <div class="chart-container">
+                  <div class="chart-info-wrapper">
+                    <h2>Complete Orders</h2>
+                    <span>90%</span>
+                  </div>
+                  <div class="chart-svg">
+                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                      <path class="circle-bg" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                      <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                      <text x="18" y="20.35" class="percentage">90%</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+
+    <div class="lateral">
+        <div class="profile">
+            <h2 class="admin">Admin</h2>
+            <div class="profile_admin">
+                <img src="Imagens\user.png" class="user">
+            </div>
+        </div>
+        <div class="users">
+            <h2>Ultimos registos</h2>
+            <div class="users_recentes">
+                <img src="Imagens\user.png" class="user_img_registo">
+                <h2>Maria</h2>
+                <span>22 anos e comprou 3 produtos</span>
+            </div>
+            <div class="users_recentes">
+                <img src="Imagens\user.png" class="user_img_registo">
+                <h2>Joao</h2>
+                <span>27 anos e comprou 1 produto</span>
+            </div>
+            <div class="users_recentes">
+                <img src="Imagens\user.png" class="user_img_registo">
+                <h2>Tomás</h2>
+                <span>19 anos e comprou 15 produtos</span>
+            </div>
+            <div class="users_recentes">
+                <img src="Imagens\user.png" class="user_img_registo">
+                <h2>Carla</h2>
+                <span>45 anos e comprou 8 produtos</span>
+            </div>
+            <div class="users_recentes"><img src="Imagens\user.png" class="user_img_registo">
+                <h2>Rui</h2>
+                <span>31 anos e comprou 9 produtos</span></div>
+        </div>
+    </div>
+    <div class="table">
+        <h2>Values Of the last 3 years</h2>
+        <table id="line-example-15" class="charts-css line multiple hide-data show-labels show-primary-axis show-4-secondary-axes show-data-axes">
+            <caption> Line Example #15 </caption>
+            <thead>
+            <tr>
+                <th scope="col"> Year </th>
+                <th scope="col"> Progress 1 </th>
+                <th scope="col"> Progress 2 </th>
+                <th scope="col"> Progress 3 </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row"> 2000 </th>
+                <td style="--start:0.1; --size:0.5;"><span class="data"> 50 </span></td>
+                <td style="--start:0; --size:0.2;"><span class="data"> 20 </span></td>
+                <td style="--start:0.2; --size:0.4;"><span class="data"> 40 </span></td>
+            </tr>
+            <tr>
+                <th scope="row"> 2010 </th>
+                <td style="--start:0.5; --size:0.8;"><span class="data"> 80 </span></td>
+                <td style="--start:0.2; --size:0.5;"><span class="data"> 50 </span></td>
+                <td style="--start:0.4; --size:0.1;"><span class="data"> 10 </span></td>
+            </tr>
+            <tr>
+                <th scope="row"> 2020 </th>
+                <td style="--start:0.8; --size:0.4;"><span class="data"> 40 </span></td>
+                <td style="--start:0.5; --size:0.3;"><span class="data"> 30 </span></td>
+                <td style="--start:0.1; --size:0.2;"><span class="data"> 20 </span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+   
+    
+    
+    
+
+    <script src="Scripts\gestao.js"></script>
+
 </body>
 </html>

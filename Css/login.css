@@ -32,6 +32,22 @@
 
 
 }
+.warning{
+  display: none;
+  background-color: red;
+  width: 100%;
+  height: 3em;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.warning p{
+  justify-content: center;
+  align-content: center;
+  font-size: 1.5em;
+  padding-top: 5px;
+}
   
   body {
     font-family: "Montserrat", sans-serif;
@@ -300,10 +316,15 @@
   .user_options-forms .user_forms-signup .forms_buttons {
     justify-content: flex-end;
   }
-  .user_options-forms .user_forms-login {
+  .user_options-forms #user-login {
     transform: translate3d(0, 0, 0);
     opacity: 1;
     visibility: visible;
+  }
+  .user_options-forms #user-signup {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: hidden;
   }
   
   /**

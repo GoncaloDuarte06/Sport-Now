@@ -7,7 +7,7 @@
 <!-- Barra superior -->
   <div class="containertopbar"> 
     <a href="Login.html" ><img class="icon" src=".\\Imagens\user.png" alt="user" ></a>
-    <img src=".\\Imagens\icon.png" alt="Logo"  class="logotipo">
+    <a href="index.html"><img src="Imagens\icon.png" alt="Logo"  class="logotipo"></a>
     <i class="bx bx-shopping-bag" id="cart-icon"></i>
     <div class="cart">
       <h2 class="cart-title">Your cart</h2> 
@@ -23,7 +23,7 @@
       <i class="bx bx-x" id="close-cart"></i>
     </div>
     <div class="inputgroup"> 
-        <button class="search-btn">
+        <button class="search-btn" onclick="search()">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class="searchicon">
             <g>
@@ -44,69 +44,86 @@
           <svg height="12px" viewBox="0 0 329.26933 329" width="12px" xmlns="http://www.w3.org/2000/svg" class="cross"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
         </button>
     </div>
-    <script type="text/javascript">
-      function imgSlider(anything){
-        document.getElementById("slider").src = anything;
-      }
-
-    </script>
-    
-  </div>
-  <div class="ItemsDestaque">   
-    <div class="shop-card" id ="item1">
-      <h2 class="title">Nike Metcon 2</h2>
-      <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
-      <h2 class="price">$130</h2>
+  <div class="ItemsDestaque" id = "ItemsDestaque">   
+    <div class="shop-card" id ="sapatilhas">
+      <h2 class="title">Nike Metcon 1</h2>
+      <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img"/>
+      <h2 class="price">$110</h2>
       <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
     </div>
 
-    <div class="shop-card" id ="item2">
+    <div class="shop-card" id ="sapatilhas">
       <h2 class="title">Nike Metcon 2</h2>
-      <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
-      <h2 class="price">$130</h2>
+      <img src="Imagens\sapatilha3.png" class="product-img" />
+      <h2 class="price">$135</h2>
       <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
      </div>
 
 
-    <div class="shop-card" id ="item3">
-      <h2 class="title">Nike Metcon 2</h2>
-      <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
-      <h2 class="price">$130</h2>
+    <div class="shop-card" id ="sapatilhas">
+      <h2 class="title">Nike Metcon 3</h2>
+      <img src="Imagens\sapatilha1.png" class="product-img" />
+      <h2 class="price">$125  </h2>
       <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
     </div>
 
-    <div class="shop-card" id ="item3">
-        <h2 class="title">Nike Metcon 2</h2>
-        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+    <div class="shop-card" id ="calcas">
+        <h2 class="title">Ganga azul</h2>
+        <img src="Imagens\pant_1.png" class="product-img" />
         <h2 class="price">$130</h2>
         <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
       </div>
-      <div class="shop-card" id ="item3">
-        <h2 class="title">Nike Metcon 2</h2>
-        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+      <div class="shop-card" id ="calcas">
+        <h2 class="title">Ganga cinzenta</h2>
+        <img src="Imagens\pants_2.png" class="product-img" />
         <h2 class="price">$130</h2>
         <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
       </div>
-      <div class="shop-card" id ="item3">
-        <h2 class="title">Nike Metcon 2</h2>
-        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+      <div class="shop-card" id ="calcas">
+        <h2 class="title">Calça Bege</h2>
+        <img src="Imagens\pants_3.png" class="product-img" />
         <h2 class="price">$130</h2>
         <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
       </div>
-      <div class="shop-card" id ="item3">
-        <h2 class="title">Nike Metcon 2</h2>
-        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+      <div class="shop-card" id ="camisolas">
+        <h2 class="title">Nike Rainbow 1</h2>
+        <img src="Imagens\tshirt_2.png" class="product-img" />
         <h2 class="price">$130</h2>
         <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
       </div>
-      <div class="shop-card" id ="item3">
-        <h2 class="title">Nike Metcon 2</h2>
-        <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
+      <div class="shop-card" id ="camisolas">
+        <h2 class="title">Nike Rainbow 2</h2>
+        <img src="Imagens\tshirt_1.png" class="product-img" />
         <h2 class="price">$130</h2>
         <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
       </div>
   </div>
+
+
+  <div class="details" id ="details">
+    <div class="div_img">
+      <img src="" class="detail-img" />
+    </div>
+    <div class="name_price">
+      <h2 class="title"></h2>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>250k reviews</span>
+      </div>
+      <div class="price_line">
+        <h2 class="price-show"></h2>
+      </div>
+    </div>
+    <div class="text">
+      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+    </div>
+  </div>
   <script  src="Scripts\script_main.js"></script>
+  <script src="Scripts\script_search.js"></script>
 
   <!-- Footer  -->
   <footer class="site-footer">

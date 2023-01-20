@@ -10,7 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-<!-- Barra superior -->
+  <!-- Barra superior -->
   <div class="containertopbar"> 
     <a href="Login.html" ><img class="icon" src=".\\Imagens\user.png" alt="user" ></a>
     <img src=".\\Imagens\icon.png" alt="Logo"  class="logotipo">
@@ -28,6 +28,7 @@
 
       <i class="bx bx-x" id="close-cart"></i>
     </div>
+  
     <div class="inputgroup"> 
       <a href="search.html">
       <button class="search-btn">
@@ -58,7 +59,6 @@
       }
 
     </script>
-    
   </div>
   <!-- slide show com interação -->
   <section>
@@ -85,27 +85,90 @@
   <!-- itens de venda -->
   <div class="ItemsDestaque">
     <div class="shop-card" id ="item1">
-      <h2 class="title">Nike Metcon 2</h2>
-      <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
-      <h2 class="price">$130</h2>
+      <h2 class="title">Nike Metcon 1</h2>
+      <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img"/>
+      <h2 class="price">$110</h2>
       <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
     </div>
 
     <div class="shop-card" id ="item2">
       <h2 class="title">Nike Metcon 2</h2>
-      <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
-      <h2 class="price">$130</h2>
+      <img src="Imagens\sapatilha3.png" class="product-img" />
+      <h2 class="price">$135</h2>
       <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
      </div>
 
 
     <div class="shop-card" id ="item3">
-      <h2 class="title">Nike Metcon 2</h2>
-      <img src="http://www.supah.it/dribbble/012/1.jpg" class="product-img" />
-      <h2 class="price">$130</h2>
+      <h2 class="title">Nike Metcon 3</h2>
+      <img src="Imagens\sapatilha1.png" class="product-img" />
+      <h2 class="price">$125  </h2>
       <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
     </div>
+    
+    <div class="shop-card" id ="item4">
+      <h2 class="title">Nike Metcon 4</h2>
+      <img src="Imagens\sapatilha2.png" class="product-img" />
+      <h2 class="price">$140</h2>
+      <i class="bx bx-shopping bag add-cart">Add to cart<span class="bg"></span></i>
+     </div>
   </div>
+
+  <!--  detalhes do produto  -->
+  <div class="details" id ="details">
+    <div class="div_img">
+      <img src="" class="detail-img" />
+    </div>
+    <div class="name_price">
+      <h2 class="title"></h2>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span></span>
+      </div>
+      <div class="price_line">
+        <h2 class="price-show"></h2>
+      </div>
+    </div>
+    <div class="text">
+      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+    </div>
+  </div>
+
+  <!-- review -->
+
+  <div class="review-form">
+    <h2 class="review_title">Comment Something About Us </h2>
+
+    <div id="id_category_1" class="star-select">
+      <span>Overall Rating:</span>
+      <input class="star-select__input" id="id_category_1_0" name="category_1" type="radio" value="5" />
+      <label class="star-select__star" for="id_category_1_0"></label>
+  
+      <input class="star-select__input" id="id_category_1_1" name="category_1" type="radio" value="4" />
+      <label class="star-select__star" for="id_category_1_1"></label>
+  
+      <input class="star-select__input" id="id_category_1_2" name="category_1" type="radio" value="3" />
+      <label class="star-select__star" for="id_category_1_2"></label>
+  
+      <input class="star-select__input" id="id_category_1_3" name="category_1" type="radio" value="2" />
+      <label class="star-select__star" for="id_category_1_3"></label>
+  
+      <input class="star-select__input" id="id_category_1_4" name="category_1" type="radio" value="1" />
+      <label class="star-select__star" for="id_category_1_4"></label>
+  
+      <input class="star-select__input" id="id_category_1_5" name="category_1" type="radio" value="0">
+      <label class="star-select__star-zero" for="id_category_1_5"></label>
+    </div>
+  
+    <textarea cols="54" id="id_content" maxlength="2024" name="content" rows="10"></textarea>
+    <div class="divButton"><button class="Button_Comment" onclick="clearTextarea()">Send</button></div>
+  
+  </div>
+
   
     
 
@@ -121,22 +184,22 @@
         <div class="categories">
           <h6>Categories</h6>
           <ul class="footer-links">
-            <li><a >Football</a></li>
-            <li><a >Basquetball</a></li>
-            <li><a >Hoquei</a></li>
-            <li><a >Rugby</a></li>
-            <li><a >Gimnastics</a></li>
+            <li><p>Football</p></li>
+            <li><p>Basquetball</p></li>
+            <li><p>Hoquei</p></li>
+            <li><p>Rugby</p></li>
+            <li><p>Gimnastics</p></li>
           </ul>
         </div>
   
         <div class="links">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a >About Us</a></li>
-            <li><a >Contact Us</a></li>
-            <li><a >Contribute</a></li>
-            <li><a >Privacy Policy</a></li>
-            <li><a >Sitemap</a></li>
+            <li><p>About Us</p></li>
+            <li><p>Contact Us</p></li>
+            <li><p>Contribute</p></li>
+            <li><p>Privacy Policy</p></li>
+            <li><p>Sitemap</p></li>
           </ul>
         </div>
       </div>
@@ -159,6 +222,5 @@
   crossorigin="anonymous"></script>
 <!-- Ligação para o script-->
   <script  src="Scripts\script_main.js"></script>
-
 </body>
 </html>
